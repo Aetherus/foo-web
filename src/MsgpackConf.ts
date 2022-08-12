@@ -1,7 +1,6 @@
 import { encode, decode, ExtensionCodec } from "@msgpack/msgpack";
 import ClassA from "./models/ClassA";
 import ClassB from "./models/ClassB";
-
 const extensionCodec = new ExtensionCodec();
 
 // Set<T>
@@ -28,4 +27,4 @@ extensionCodec.register({
   },
 });
 
-export default { extensionCodec };
+export { extensionCodec };
